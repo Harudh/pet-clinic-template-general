@@ -74,7 +74,7 @@ export function Hero() {
             as="h1"
             text="Compassionate care for your furry family"
             highlight={["furry", "family"]}
-            highlightClassName="text-gradient-animate"
+            highlightClassName="text-aurora"
             className="font-display text-4xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl"
             delay={0.15}
             stagger={0.022}

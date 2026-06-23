@@ -1,4 +1,5 @@
 import { Check, PhoneCall } from "lucide-react";
+import { AuroraText } from "@/components/magic/aurora-text";
 import { Reveal } from "@/components/magic/reveal";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -40,7 +41,7 @@ export function About() {
 
           {/* Experience badge */}
           <div className="glass absolute -bottom-6 left-1/2 flex -translate-x-1/2 items-center gap-3 rounded-2xl border border-border/70 px-5 py-3 shadow-elevated">
-            <span className="font-display text-3xl font-bold text-gradient">15+</span>
+            <AuroraText className="font-display text-3xl font-bold">15+</AuroraText>
             <span className="text-sm font-medium leading-tight text-foreground">
               Years of <br /> trusted care
             </span>
@@ -54,7 +55,7 @@ export function About() {
           </Reveal>
           <Reveal delay={0.05}>
             <h2 className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl">
-              A vet your pet will actually <span className="text-gradient">look forward to</span>
+              A vet your pet will actually <AuroraText>look forward to</AuroraText>
             </h2>
           </Reveal>
           <Reveal delay={0.1}>

@@ -44,13 +44,20 @@ export function SplitText({
         const isHighlighted = hl.has(word.replace(/[.,!?:;]/g, "").toLowerCase());
         return (
           <Fragment key={wi}>
-            <span aria-hidden className={cn("inline-block", isHighlighted && highlightClassName)}>
+            <span aria-hidden className="inline-block">
               {Array.from(word).map((char, ci) => {
                 const idx = charIndex++;
                 return (
                   <motion.span
                     key={ci}
-                    className="inline-block will-change-[transform,opacity]"
+                    className={cn(
+                      "inline-block will-change-[transform,opacity]",
+                      // Gradient highlights (background-clip: text) must sit on
+                      // the element that actually holds the glyph, not the word
+                      // wrapper — otherwise there's no text to clip and the word
+                      // renders invisible.
+                      isHighlighted && highlightClassName
+                    )}
                     initial={reduce ? false : { opacity: 0, y: "0.6em", filter: "blur(8px)" }}
                     animate={
                       inView

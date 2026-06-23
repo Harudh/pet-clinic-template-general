@@ -1,3 +1,4 @@
+import { AuroraText } from "@/components/magic/aurora-text";
 import { Reveal } from "@/components/magic/reveal";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -15,7 +16,7 @@ export function WhyChoose() {
           </Reveal>
           <Reveal delay={0.05}>
             <h2 className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl">
-              Care that goes <span className="text-gradient">above and beyond</span>
+              Care that goes <AuroraText>above and beyond</AuroraText>
             </h2>
           </Reveal>
           <Reveal delay={0.1}>

@@ -209,6 +209,11 @@
 @keyframes text-flow {
   to { background-position: 220% center; }
 }
+@keyframes aurora-text {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
 /*
   ----------------------------------------------------------------------------
@@ -301,6 +306,34 @@
   }
   @media (prefers-reduced-motion: reduce) {
     .text-gradient-animate {
+      animation: none;
+    }
+  }
+
+  /*
+    Magic UI-style "Aurora" text — a richer, multi-stop gradient that slowly
+    drifts back and forth like northern lights. Every stop is a theme token, so
+    it re-skins with the rest of the site. Used via the <AuroraText> component
+    and as a SplitText highlight (see hero headline).
+  */
+  .text-aurora {
+    background-image: linear-gradient(
+      115deg,
+      var(--primary),
+      var(--chart-3),
+      var(--accent-foreground),
+      var(--chart-5),
+      var(--primary)
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: aurora-text 6s ease-in-out infinite;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .text-aurora {
       animation: none;
     }
   }

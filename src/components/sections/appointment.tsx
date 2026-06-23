@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Field, Input, Select, Textarea } from "@/components/ui/form";
 import { AuroraBackground } from "@/components/magic/aurora-background";
+import { AuroraText } from "@/components/magic/aurora-text";
 import { Reveal } from "@/components/magic/reveal";
 import { clinic, petTypes, serviceOptions, timeSlots } from "@/data/site";
 
@@ -34,7 +35,7 @@ export function Appointment() {
           </Reveal>
           <Reveal delay={0.05}>
             <h2 className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl md:text-[2.7rem]">
-              Schedule your pet's <span className="text-gradient">next visit</span>
+              Schedule your pet's <AuroraText>next visit</AuroraText>
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
