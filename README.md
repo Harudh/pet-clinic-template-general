@@ -20,7 +20,7 @@ light/dark theme** that you can re-skin in seconds using [tweakcn](https://tweak
   - **SplitText** — characters fade + rise + de-blur into view (hero headline & every section title)
   - **ShinyText** — light streak sweeping across labels
   - **RotatingText** — cycling per-character word animation in the hero
-  - **Spotlight** — soft animated light beam over the hero
+  - **LightRays** — volumetric "god ray" light beams + a sweeping laser scan over the hero
   - **Particles** — on-theme canvas particle field that reacts to the cursor
   - Aurora gradient background, animated "laser" gradient text, cursor-following spotlight
     cards, seamless dual-direction marquee, scroll reveals & animated counters
@@ -118,8 +118,8 @@ src/
    ├─ theme-toggle.tsx
    ├─ scroll-to-top.tsx
    ├─ ui/                    # Button, Badge, SectionHeading, form fields
-   ├─ magic/                 # SplitText, ShinyText, RotatingText, Spotlight,
-   │                         # Particles, Aurora, Reveal, Marquee, CountUp, SpotlightCard
+   ├─ magic/                 # LightRays, SplitText, ShinyText, RotatingText, Particles,
+   │                         # Spotlight, Aurora, Reveal, Marquee, CountUp, SpotlightCard
    └─ sections/              # Navbar, Hero, Stats, Services, About, WhyChoose,
                              # Shop, Appointment, Team, Testimonials, CTA,
                              # Contact, Footer

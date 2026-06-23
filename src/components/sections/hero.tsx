@@ -3,7 +3,7 @@ import { ArrowRight, CalendarCheck, PlayCircle, ShieldPlus, Star } from "lucide-
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Particles } from "@/components/magic/particles";
-import { Spotlight } from "@/components/magic/spotlight";
+import { LightRays } from "@/components/magic/light-rays";
 import { SplitText } from "@/components/magic/split-text";
 import { ShinyText } from "@/components/magic/shiny-text";
 import { RotatingText } from "@/components/magic/rotating-text";
@@ -28,8 +28,8 @@ export function Hero() {
       {/* Background: light beam + particle field + soft colour glows */}
       <div className="absolute inset-0 -z-10 overflow-hidden text-primary">
         <div className="absolute inset-0 bg-grid opacity-50 mask-fade-b" />
-        <Particles className="opacity-70" quantity={90} />
-        <Spotlight />
+        <LightRays />
+        <Particles className="opacity-70" quantity={80} />
         <div className="absolute -left-24 top-0 h-[30rem] w-[30rem] animate-float-slow rounded-full bg-primary/15 blur-[120px]" />
         <div className="absolute right-0 top-1/3 h-[26rem] w-[26rem] animate-float rounded-full bg-accent/30 blur-[120px]" />
       </div>
