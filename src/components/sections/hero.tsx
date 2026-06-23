@@ -6,7 +6,7 @@ import { Particles } from "@/components/magic/particles";
 import SideRays from "@/components/magic/side-rays";
 import { SplitText } from "@/components/magic/split-text";
 import { ShinyText } from "@/components/magic/shiny-text";
-import { RotatingText } from "@/components/magic/rotating-text";
+import { MorphingText } from "@/components/magic/morphing-text";
 import { useTheme } from "@/components/theme-provider";
 import { clinic, testimonials, trustHighlights } from "@/data/site";
 import { unsplash } from "@/lib/utils";
@@ -90,7 +90,7 @@ export function Hero() {
             className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xl font-semibold text-foreground"
           >
             <span>Expert care for</span>
-            <RotatingText
+            <MorphingText
               words={["dogs 🐕", "cats 🐈", "rabbits 🐇", "birds 🦜", "every companion 🐾"]}
               className="text-primary"
             />
